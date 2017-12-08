@@ -1,6 +1,4 @@
-### This is Theron Patrick's solution to the Senior Software Engineer assignment. Below you'll find how to run the app. This assumes you have node.js installed on your machine.
-
-### To view the app, visit http://theronp.com/mickey
+### This is Theron Patrick's solution to the Senior Software Engineer assignment. To view the live app, visit http://theronp.com/mickey
 
 #### Installation
 
