@@ -6,7 +6,7 @@ Use `npm install` to install project dependencies (assumes you have Node.js inst
 
 #### Building
 
-Use `npm run start` to start the project in development mode. 
+Use `npm run start` to start the project in development mode. After running, visit `http://localhost:3000` in a web browser to view it.
 
 Use `npm run build` to build the project for production. Note that currently the project is configured to be hosted on `http://theronp.com/mickey`. To change this, modify the `homepage` key of `package.json`.
 
