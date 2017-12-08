@@ -1,28 +1,18 @@
 ### This is Theron Patrick's solution to the software engineer assignment. Below you'll find how to run the app. This assumes you have node.js installed on your machine.
 
-#### Available Scripts
+### To view the app, visit http://theronp.com/mickey
 
-In the project directory, you can run:
+#### Installation
 
-##### `npm start`
+Use `npm install` to install project dependencies (assumes you have Node.js installed). 
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+#### Building
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+Use `npm run start` to start the project in development mode. 
 
-##### `npm test`
+Use `npm run build` to build the project for production. Note that currently the project is configured to be hosted on `http://theronp.com/mickey`. To change this, modify the `homepage` key of `package.json`.
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](#running-tests) for more information.
+#### Using the App
 
-##### `npm run build`
+Use your keyboard arrow keys or click on a thumbnail to highlight that game. Use the keyboard `Enter` key to display the full scoreboard for that game
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-See the section about [deployment](#deployment) for more information.
