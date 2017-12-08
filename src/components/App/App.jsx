@@ -13,6 +13,7 @@ class App extends Component {
 
   componentWillMount() {
 
+    // Fetch the mlb score data
     api.getMlbScores()
     .then((response) => {
 
@@ -21,6 +22,8 @@ class App extends Component {
         games: response.data.games.game
       })
     })
+
+
   }
 
   render() {

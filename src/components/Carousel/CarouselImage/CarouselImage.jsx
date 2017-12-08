@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 
 import "./CarouselImage.scss"
-import classNames from "classnames"
 
 class CarouselImage extends Component {
 
@@ -9,9 +8,22 @@ class CarouselImage extends Component {
 
   }
 
-  render() {
+  componentDidMount() {
+    // Initially focus the first item
+    if (this.props.tabIndex === 1) {
+      this.refs.figureRef.focus()
+    }
+  }
 
-    console.log("game " , this.props.game);
+  onFocusHandler = () => {
+    this.props.setCarouselIndex(this.props.tabIndex)
+  }
+
+  focus = () => {
+    this.refs.figureRef.focus()
+  }
+
+  render() {
 
     // Get thumbnail image src from data
     let thumbnail = ""
@@ -55,9 +67,9 @@ class CarouselImage extends Component {
     }
 
     return (
-      <figure className="carousel-image" tabindex="0">
+      <figure className="carousel-image" tabIndex={this.props.tabIndex} onFocus={this.onFocusHandler} ref="figureRef">
         <figcaption>{headline}</figcaption>
-        <img src={thumbnail}></img>
+        <img src={thumbnail} alt="thumbnail"></img>
 
         <p>{description}</p>
       </figure>
