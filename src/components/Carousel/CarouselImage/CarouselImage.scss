@@ -1,0 +1,50 @@
+.carousel-image {
+  width: 190px;
+
+  display: inline-block;
+  position: relative;
+
+  vertical-align: top;
+  text-align: center;
+
+  margin: 65px 10px 0px 10px;
+
+  // Transparent border to preserve size when we add it later
+  border: 2px solid transparent;
+  color: #fff;
+
+  white-space: normal;
+
+  img {
+    padding: 10px;
+  }
+
+  // Caption, description, and border are hidden until focused
+  figcaption {
+    // Position absolute and align bottom of box so our text expands up and keeps our images in line
+    position: absolute;
+    bottom: calc(100% + 15px);
+    width: 100%;
+
+    text-transform: uppercase;
+    font-size: 18px;
+
+    opacity: 0;
+  }
+
+  p {
+    font-size: 14px;
+    opacity: 0;
+  }
+
+  &:focus {
+    // Remove default highlight
+    outline: 0;
+
+    border: 2px solid #fff;
+
+    figcaption, p {
+      opacity: 1;
+    }
+  }
+}
